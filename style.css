@@ -1,0 +1,47 @@
+
+
+.modal_login{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.modal_login_form{
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px black solid;
+    border-radius: 20px;
+    row-gap: 20px;
+}
+
+.modal_login_form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.m1{
+    max-width: 300px;
+    height: 30px;
+    padding: 10px;
+}
+.modal_login_form-button{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+.modal_login_form-button:active{
+    background-color: green;
+    transform: scale(1.2);
+
+}
