@@ -91,3 +91,73 @@
     transform: scale(1.2);
 
 }
+
+
+
+.main__inner{
+    min-height: 700px;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(164, 88, 235);
+}
+
+.todo{
+    background-color: rgb(237, 237, 122);
+    padding: 10px;
+    max-width: 300px;
+}
+
+.todo p{
+    max-width: 200px;
+    color: rgb(36, 142, 236);
+}
+
+
+.newTaskCreate{
+    background-color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.newTaskInp1 , .newTaskInp2{
+    height: 40px;
+    max-width:600px ;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 20px;
+    
+}
+.newTaskBtn{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+select{
+    cursor: pointer;
+    height: 30px;
+    max-width: 250px;
+}
