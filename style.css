@@ -159,5 +159,10 @@
 select{
     cursor: pointer;
     height: 30px;
-    max-width: 250px;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: orange;
+    color: white;
+    border: none;
+    
 }
