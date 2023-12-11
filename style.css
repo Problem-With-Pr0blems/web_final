@@ -1,85 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header__inner{
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.newTaskInp1 , .newTaskInp2{
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #00ffea;
+    border: 20px;
+}
+a{
+    color: red;
+}
+
+    
+
+.wrapper2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    background: linear-gradient(to right, #ffffff, #09d6dd);
+    color: black;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 
 
 .modal_login{
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to right , #ffffff, #2dd15e);
     display: flex;
     align-items:center ;
     justify-content: center;
 }
 
 .modal_login_form{
-    max-width: 500px;
+    height: 100vh;
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 30px;
-    border: 2px black solid;
-    border-radius: 20px;
+    
+    align-items: center;
     row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.modal_login_form-button{
+    max-width: 300px;
 }
 
 .modal_login_form-inputs{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+h3{
+    text-align: justify;
 }
 
 .m1{
     max-width: 300px;
-    height: 30px;
+    height: 50px;
+    background-color: #00aaff;
     padding: 10px;
-}
-.modal_login_form-button{
-    background-color: orange;
-    color: aliceblue;
+    font-size: 20px;
     border-radius: 20px;
-    border: none;
-    height: 30px;
-    width: 150px;
-    margin: 0 auto;
-    transition: 0.2s;
+    border: 5px solid white;
 }
-.modal_login_form-button:active{
-    background-color: green;
-    transform: scale(1.2);
 
+.modal_login_form-button:active{
+    background-color: rgb(19, 238, 19);
 }
 
 .modal_signin{
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to right , #ffffff, #2d9ad1);
     display: flex;
     align-items:center ;
     justify-content: center;
 }
 
 .modal_signin_form{
-    max-width: 500px;
+    height: 100vh;
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 30px;
-    border: 2px black solid;
-    border-radius: 20px;
+    
+    align-items: center;
     row-gap: 20px;
+    justify-content: space-evenly;
 }
 
 .modal_signin_form-inputs{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.m1{
-    max-width: 300px;
-    height: 30px;
-    padding: 10px;
-}
+
+
 .modal_signin_form-button{
-    background-color: orange;
+    background-color: rgb(240, 226, 201);
     color: aliceblue;
-    border-radius: 20px;
+    
     border: none;
     height: 30px;
     width: 150px;
@@ -95,17 +147,18 @@
 
 
 .main__inner{
-    min-height: 700px;
-    min-width: 375px;
+    padding: 50px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    background-color: rgb(164, 88, 235);
+    background-color: rgb(255, 254, 255);
 }
 
 .todo{
-    background-color: rgb(237, 237, 122);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     max-width: 300px;
 }
@@ -126,19 +179,14 @@
     gap: 15px;
 }
 
-.newTaskInp1 , .newTaskInp2{
-    height: 40px;
-    max-width:600px ;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border: 2px solid rgb(0, 0, 0) ;
-    border-radius: 20px;
+
     
-}
+    
+
 .newTaskBtn{
-    background-color: orange;
+    background-color: rgb(235, 229, 219);
     color: aliceblue;
-    border-radius: 20px;
+    
     border: none;
     height: 30px;
     width: 150px;
@@ -146,23 +194,103 @@
     transition: 0.2s;
 }
 
-.filter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    font-size: 30px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+
 
 select{
     cursor: pointer;
-    height: 30px;
-    max-width: 450px;
+    height: 50px;
+    width: 200px;
     margin: 0 auto;
-    background-color: orange;
+    background: linear-gradient(to left , rgb(69, 207, 104) , #00ffea);
     color: white;
     border: none;
+    font-size: 20px;
+    border-radius: 20px;
     
+}
+
+
+.modal_form-button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.modal_form-button:active {
+    background-color: forestgreen;
+    transform: scale(1.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.newTaskBtn:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.newTaskBtn:active {
+    background-color: forestgreen;
+    transform: scale(1.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+select:hover {
+    background-color: #09d6dd;
+    transition: background-color 0.2s;
+}
+
+
+.modal_login {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.modal_signin {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.main__inner {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.todo {
+    background-color: rgb(173, 171, 167);
+    color: black;
+   
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.newTaskCreate {
+    background:  #ffffff ;
+    color: black;
+    
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+button{
+    color: white;
+    background: #00aaff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover{
+    background-color: #00ff00;
 }
